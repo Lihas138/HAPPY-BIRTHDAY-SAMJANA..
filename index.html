@@ -3,446 +3,412 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dear Samjana 💗</title>
+<title>Dear SAMJANA 💗</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-:root{--text:#fff2f7;--pink:#ffb5d2;--gold:#ffe5a4}
-body{min-height:100vh;color:var(--text);font-family:Georgia,"Times New Roman",serif;background:#100d2b;overflow-x:hidden}
-button{font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
-#sky{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:linear-gradient(#100d2b,#241640 60%,#46244d);transition:background 1s}
-.aurora{position:absolute;width:130%;height:42%;left:-15%;top:3%;border-radius:50%;filter:blur(40px);opacity:.3;background:linear-gradient(90deg,transparent,#43e9c4,#9d83ff,#ff9bc8,transparent);animation:aurora 13s ease-in-out infinite alternate}
-@keyframes aurora{to{transform:translate(10%,15%) rotate(10deg) scale(1.2)}}
-.moon{position:absolute;right:12%;top:7%;width:58px;height:58px;border-radius:50%;background:#fff4d0;box-shadow:0 0 25px #ffe7a8,0 0 75px #fff0bd55}
-.star{position:absolute;width:3px;height:3px;border-radius:50%;background:white;box-shadow:0 0 8px white;animation:twinkle 2s infinite alternate}
-@keyframes twinkle{to{opacity:.2;transform:scale(.5)}}
-.shooting{position:absolute;top:12%;left:-30%;width:110px;height:2px;background:linear-gradient(90deg,transparent,white);transform:rotate(-25deg);animation:shoot 8s linear infinite}
-@keyframes shoot{0%,70%{left:-30%;opacity:0}74%{opacity:1}95%,100%{left:130%;top:60%;opacity:0}}
-#decor{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:2}
-.petal{position:absolute;top:-30px;animation:fall linear infinite;filter:drop-shadow(0 0 5px #ff9bc7)}
-@keyframes fall{0%{transform:translateY(-5vh) rotate(0)}50%{transform:translate(30px,50vh) rotate(180deg)}100%{transform:translate(-20px,110vh) rotate(360deg)}}
-.firefly{position:absolute;width:5px;height:5px;background:#fff6b0;border-radius:50%;box-shadow:0 0 12px 4px #ffeaa366;animation:firefly 5s ease-in-out infinite alternate}
-@keyframes firefly{to{transform:translate(40px,-55px);opacity:.2}}
-.butterfly{position:absolute;font-size:25px;animation:butterfly 10s ease-in-out infinite alternate;filter:drop-shadow(0 0 7px #ffc3e0)}
-@keyframes butterfly{30%{transform:translate(35px,-35px) rotate(15deg)}70%{transform:translate(-15px,-75px) rotate(-12deg)}100%{transform:translate(45px,-15px) rotate(10deg)}}
-#app{position:relative;z-index:1}
-.page{display:none;min-height:100vh;padding:38px 16px;align-items:center;justify-content:center;text-align:center;animation:appear .7s ease}
-.page.active{display:flex}
-@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.content{width:100%;max-width:650px;margin:auto}
-.glass{padding:27px 21px;border:1px solid #ffffff30;border-radius:24px;background:#ffffff0d;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 15px 50px #0002}
-.eyebrow{font-size:.76rem;letter-spacing:3px;text-transform:uppercase;color:#ffd5e8;margin-bottom:19px}
-h1{font-size:clamp(2.1rem,8vw,4rem);line-height:1.15;color:#ffe3ee;text-shadow:0 0 25px #ff87bd55;margin-bottom:22px}
-h2{font-size:clamp(1.55rem,6vw,2.5rem);line-height:1.3;color:#ffe0eb;margin-bottom:20px}
-p{font-size:clamp(1rem,3.7vw,1.2rem);line-height:1.85}
-.small{font-size:.9rem;color:#ffe5efc9;margin-top:16px}
-button.primary{border:0;border-radius:50px;padding:14px 24px;margin-top:23px;background:linear-gradient(135deg,#ffe5ee,#ff9fca);color:#451932;font-size:1rem;font-weight:bold;box-shadow:0 5px 25px #ff86bb30}
-button.secondary{border:1px solid #ffffff55;border-radius:50px;padding:12px 20px;margin-top:15px;color:white;background:#ffffff10}
-button:focus-visible{outline:3px solid white;outline-offset:4px}
-.quiz-options{display:grid;gap:12px;margin-top:22px}
-.answer{border:1px solid #ffffff40;background:#ffffff0d;color:#fff4f7;border-radius:15px;padding:15px 12px;font-size:1rem;line-height:1.5}
-.answer.selected{background:#ffb5d544;border-color:#ffc6e1}
-#feedback{margin-top:20px;line-height:1.8;color:#ffe0eb}
-.year{font-size:clamp(5rem,23vw,9rem);line-height:1;font-weight:bold;color:#ffd5e6;text-shadow:0 0 45px #ff8bbb66;margin-bottom:20px}
-.quote{font-style:italic;line-height:2}
-.gift{font-size:clamp(6rem,25vw,10rem);display:inline-block;background:none;border:0;animation:bounce 2s infinite}
-@keyframes bounce{50%{transform:translateY(-12px) rotate(4deg)}}
-.gift.open{animation:openGift .7s forwards}
-@keyframes openGift{50%{transform:scale(1.3) rotate(12deg)}100%{transform:scale(.5);opacity:.4}}
-.letter{text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;line-height:2;font-size:clamp(1rem,3.6vw,1.12rem);color:#fff0f4}
-#videoPage video{display:block;width:100%;max-height:68vh;background:#000;border-radius:16px;margin:20px auto}
-.garden-line{margin:22px auto;color:#ffd0e5;letter-spacing:7px}
-footer{font-size:.8rem;color:#ffe2edaa;margin-top:24px}
+*{box-sizing:border-box}
+:root{--ink:#63344f;--glass:rgba(255,255,255,.72);--border:rgba(255,255,255,.85)}
+body{margin:0;min-height:100vh;font-family:Georgia,"Times New Roman",serif;color:var(--ink);overflow-x:hidden;transition:background 1s ease}
+body.welcome{background:linear-gradient(160deg,#190e38,#67448e,#ed9fbe,#ffe6cc)}
+body.quiz{background:linear-gradient(150deg,#5c183e,#c25b85,#ffcad8,#fff0d4)}
+body.birthday{background:linear-gradient(160deg,#ffdfac,#f9a7c5,#d6b7f4,#a8e7d7)}
+body.year23{background:linear-gradient(160deg,#b3e8c0,#e8ffd5,#ffd8e8,#b9e6f5)}
+body.year24{background:linear-gradient(150deg,#641d45,#b34f78,#f5b3c8,#ffe5d2)}
+body.year25{background:linear-gradient(160deg,#101b45,#475e9a,#b2a8d8,#f9c7d9)}
+body.year26{background:linear-gradient(160deg,#ffe5ae,#ffc6d9,#cbb8f7,#a6dbe8)}
+body.gift{background:linear-gradient(150deg,#45204f,#a45188,#f3a5c5,#ffe5bd)}
+body.letter{background:linear-gradient(160deg,#f4c9a7,#e9a4bb,#c7b4e8,#a7d9c8)}
+body.video{background:linear-gradient(160deg,#17172e,#49375e,#886c92);color:white}
+body.final{background:linear-gradient(150deg,#ffdfb0,#f5a5be,#b8a5ed,#a4dfcf)}
 
-/* Different atmosphere for each page */
-body.theme-welcome #sky{background:linear-gradient(#100d2b,#22153f 60%,#43214f)}
-body.theme-quiz #sky{background:radial-gradient(ellipse at 50% 80%,#87365f,#371943 55%,#180f30)}
-body.theme-birthday #sky{background:radial-gradient(ellipse at top,#a66a39,#63304d 45%,#201331)}
-body.theme-2023 #sky{background:radial-gradient(ellipse at bottom,#527b67,#234a55 45%,#14283f)}
-body.theme-2024 #sky{background:radial-gradient(ellipse at bottom,#9b3e65,#522445 48%,#21122f)}
-body.theme-2025 #sky{background:radial-gradient(ellipse at bottom,#305c72,#242448 55%,#11152c)}
-body.theme-2026 #sky{background:linear-gradient(#101a46,#34205d 55%,#15534d)}
-body.theme-gift #sky{background:radial-gradient(ellipse at center,#693968,#322047 55%,#17102d)}
-body.theme-letter #sky{background:radial-gradient(ellipse at bottom,#76414a,#38213f 55%,#1b132b)}
-body.theme-video #sky{background:#080710}
-body.theme-final #sky{background:linear-gradient(#f1a56c,#bb6474 48%,#42284f)}
+#sky{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.orb{position:absolute;width:240px;height:240px;border-radius:50%;filter:blur(50px);opacity:.32;animation:orbFloat 12s ease-in-out infinite alternate;background:#fff3c6}
+.orb:nth-child(1){top:5%;left:-90px}
+.orb:nth-child(2){top:45%;right:-100px;background:#ff9bc8;animation-delay:-4s}
+.orb:nth-child(3){bottom:-120px;left:25%;background:#a6f4db;animation-delay:-7s}
+@keyframes orbFloat{from{transform:translate(0,0) scale(.9)}to{transform:translate(35px,-35px) scale(1.25)}}
 
-body.theme-quiz .aurora{background:linear-gradient(90deg,transparent,#ff8dbd,#ffc1db,#a982e8,transparent);opacity:.27}
-body.theme-birthday .aurora{background:linear-gradient(90deg,transparent,#ffd878,#fff0b0,#ffac85,transparent);opacity:.3}
-body.theme-2023 .aurora{background:linear-gradient(90deg,transparent,#b2f1d0,#e3f4bd,transparent);opacity:.25}
-body.theme-2024 .aurora{background:linear-gradient(90deg,transparent,#ff8cb8,#ffc6cf,transparent);opacity:.28}
-body.theme-letter .aurora{background:linear-gradient(90deg,transparent,#ffd1a1,#ffb7c8,transparent);opacity:.2}
-body.theme-final .moon{background:#ffe7ba;box-shadow:0 0 45px #ffe4a0}
-@media(max-width:380px){.page{padding:28px 12px}.glass{padding:22px 15px}.moon{width:42px;height:42px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+#decor{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.floaty{position:absolute;bottom:-70px;left:var(--x);font-size:var(--size);opacity:0;animation:floatUp var(--speed) linear infinite;animation-delay:var(--delay);filter:drop-shadow(0 3px 8px #ffffff77)}
+@keyframes floatUp{0%{transform:translate(0,0) rotate(0);opacity:0}10%{opacity:.9}50%{transform:translate(var(--drift),-55vh) rotate(20deg)}90%{opacity:.8}100%{transform:translate(calc(var(--drift)*-1),-115vh) rotate(-25deg);opacity:0}}
+.butterfly{position:absolute;top:var(--y);left:-70px;font-size:30px;animation:butterflyFly var(--speed) linear infinite;animation-delay:var(--delay);filter:drop-shadow(0 0 8px #fff)}
+@keyframes butterflyFly{0%{transform:translate(0,0)}25%{transform:translate(28vw,-35px) rotate(12deg)}50%{transform:translate(55vw,20px) rotate(-12deg)}75%{transform:translate(80vw,-35px) rotate(12deg)}100%{transform:translate(115vw,0)}}
+.firefly{position:absolute;width:5px;height:5px;border-radius:50%;background:#fffbd0;box-shadow:0 0 12px 4px #fff7a0;left:var(--x);top:var(--y);animation:glow 2s ease-in-out infinite alternate;animation-delay:var(--delay)}
+@keyframes glow{from{opacity:.15;transform:scale(.6)}to{opacity:1;transform:scale(1.6)}}
+.bird{position:absolute;top:var(--y);left:-60px;font-size:27px;animation:birdFly var(--speed) linear infinite;animation-delay:var(--delay)}
+@keyframes birdFly{0%{transform:translateX(0)}50%{transform:translateX(55vw) translateY(-35px)}100%{transform:translateX(115vw) translateY(5px)}}
+
+#app{position:relative;z-index:2;width:100%;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px 14px}
+.page{display:none;width:min(100%,720px);text-align:center;padding:28px 20px;border:1px solid var(--border);border-radius:28px;background:var(--glass);box-shadow:0 16px 50px #3b173522;backdrop-filter:blur(12px);animation:appear .8s ease both}
+.page.active{display:block}
+body.video .page{background:rgba(255,255,255,.10);border-color:#ffffff55}
+@keyframes appear{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+h1{font-size:clamp(2rem,7vw,3.4rem);line-height:1.12;margin:8px 0 18px}
+h2{font-size:clamp(1.5rem,5vw,2.2rem);margin:8px 0 18px}
+p{font-size:clamp(1rem,3.8vw,1.22rem);line-height:1.8}
+.small{font-size:.95rem;opacity:.8}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:.75rem;font-family:Arial,sans-serif}
+.big-icon{font-size:clamp(3rem,12vw,6rem);margin:12px 0;animation:softPulse 3s ease-in-out infinite}
+@keyframes softPulse{50%{transform:scale(1.07)}}
+button{border:0;border-radius:30px;padding:14px 22px;margin:8px 4px;min-height:48px;max-width:100%;font-size:1rem;font-weight:bold;cursor:pointer;color:#68314e;background:linear-gradient(120deg,#fff1bb,#ffd4e5);box-shadow:0 5px 15px #6023481c;transition:transform .2s,filter .2s}
+button:active{transform:scale(.97)}
+button:focus-visible{outline:3px solid #783c87;outline-offset:3px}
+button:hover{filter:brightness(1.04)}
+.primary{background:linear-gradient(120deg,#ffb5d0,#ffe7a9)}
+.answers{display:grid;grid-template-columns:1fr;gap:9px;margin:20px 0}
+.answers button{width:100%;margin:0}
+.answers button:disabled{cursor:default}
+.feedback{min-height:65px;padding:12px;line-height:1.6}
+.progress{font-size:.9rem;opacity:.75}
+.garden-line{font-size:clamp(1.7rem,6vw,2.6rem);line-height:1.7;letter-spacing:3px}
+.year{font-size:clamp(4rem,20vw,8rem);font-weight:bold;letter-spacing:5px;line-height:1;margin:25px 0;color:#fff;text-shadow:0 4px 20px #54325e55}
+.memory-quote{font-style:italic;line-height:1.9;max-width:520px;margin:20px auto}
+.letter-paper{text-align:left;background:#fffaf1;color:#59364b;border-radius:18px;padding:22px 18px;box-shadow:inset 0 0 20px #d7a88d30}
+.letter-paper p{font-size:1rem;line-height:1.9;overflow-wrap:anywhere}
+.letter-paper .letter-text{white-space:pre-wrap}
+.video-box{width:100%;overflow:hidden;border-radius:18px;background:#151522;margin:20px auto}
+video{display:block;width:100%;max-height:65vh;background:#111}
+#finishVideo{display:none}
+.footer-flower{margin-top:20px;font-size:1.6rem;letter-spacing:7px}
+@media(min-width:600px){.page{padding:38px 34px}.letter-paper{padding:28px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 </style>
 </head>
 
-<body class="theme-welcome">
-
-<div id="sky" aria-hidden="true">
-  <div class="aurora"></div>
-  <div class="moon"></div>
-  <div class="shooting"></div>
-</div>
-<div id="decor" aria-hidden="true"></div>
-
+<body class="welcome">
+<div id="sky"><div class="orb"></div><div class="orb"></div><div class="orb"></div></div>
+<div id="decor"></div>
 <audio id="music" src="song.mp3" loop preload="auto"></audio>
 
 <main id="app">
 
 <section class="page active" id="welcome">
-  <div class="content glass">
-    <div class="eyebrow">A little world made for you</div>
-    <h1>Dear Samjana 💗</h1>
-    <div class="garden-line">✧ ✿ ✧</div>
-    <p>Sahil has prepared something for you… ❤️</p>
-    <p style="margin-top:12px">A little surprise, made with love, waiting beneath these stars. 🌙</p>
-    <button class="primary" onclick="startExperience()">Enter Your Little World ✨</button>
-    <footer>Made with love, just for you ❤️</footer>
-  </div>
+ <div class="eyebrow">A little world made just for you</div>
+ <div class="big-icon">🌙</div><div class="garden-line">🌷 🌸 🦋 🌼</div>
+ <h1>Dear Samjana 💗</h1>
+ <p>Sahil has prepared something for you… ❤️</p>
+ <p class="small">A little surprise, filled with memories, love and wishes.</p>
+ <button class="primary" onclick="startJourney()">Enter Your Paradise ✨</button>
+ <div class="footer-flower">🌹 🌿 🌹</div>
 </section>
 
-<section class="page" id="quizPage">
-  <div class="content glass">
-    <div class="eyebrow" id="quizNumber">A little question for you</div>
-    <h2 id="question"></h2>
-    <p class="small">Choose the answer that feels right to you. 💗</p>
-    <div class="quiz-options" id="options"></div>
-    <p id="feedback" aria-live="polite"></p>
-    <button class="primary" id="quizNext" style="display:none" onclick="nextQuestion()">Next 💕</button>
-  </div>
+<section class="page" id="quiz1">
+ <div class="eyebrow">A little question for you 💕</div><div class="big-icon">🦋</div>
+ <p class="progress">Question 1 of 5</p><h2>How beautiful do you think you are?</h2>
+ <div class="answers">
+  <button onclick="answer(1,this)">A little beautiful 🌸</button>
+  <button onclick="answer(1,this)">Very beautiful 😊</button>
+  <button onclick="answer(1,this)">The most beautiful girl ever! 💗</button>
+ </div>
+ <p class="feedback" id="feedback1"></p>
+ <button id="next1" class="primary" style="display:none" onclick="go('quiz2')">Next 💗</button>
 </section>
 
-<section class="page" id="birthdayPage">
-  <div class="content glass">
-    <div class="eyebrow">Today is all about you</div>
-    <h1>Happy Birthday, My Love! 🎂</h1>
-    <div style="font-size:3rem;margin:15px">🌹✨🌹</div>
-    <p>May your days be filled with happiness, your heart with peace, and your life with beautiful moments you will always remember.</p>
-    <p style="margin-top:14px">You deserve all the beautiful things this world has to offer. ❤️</p>
-    <button class="primary" onclick="go('year2023')">Let's Remember Our Journey ✨</button>
-  </div>
+<section class="page" id="quiz2">
+ <div class="eyebrow">Question 2 💞</div><div class="big-icon">🌹</div>
+ <p class="progress">Question 2 of 5</p><h2>Do you know how special you are to me?</h2>
+ <div class="answers">
+  <button onclick="answer(2,this)">Maybe a little 💕</button>
+  <button onclick="answer(2,this)">I think I do 🫶</button>
+  <button onclick="answer(2,this)">More than words can explain ❤️</button>
+ </div>
+ <p class="feedback" id="feedback2"></p>
+ <button id="next2" class="primary" style="display:none" onclick="go('quiz3')">Next 💗</button>
 </section>
 
-<section class="page" id="year2023">
-  <div class="content glass">
-    <div class="eyebrow">Our little timeline</div>
-    <div class="year">2023</div>
-    <h2>The Beginning of Something Beautiful</h2>
-    <p class="quote">“Somewhere between our first moments and our little conversations, you became someone special to my heart.”</p>
-    <div class="garden-line">🌸 ✧ 🌷</div>
-    <button class="primary" onclick="go('year2024')">Next Memory →</button>
-  </div>
+<section class="page" id="quiz3">
+ <div class="eyebrow">Question 3 💞</div><div class="big-icon">🌙</div>
+ <p class="progress">Question 3 of 5</p><h2>What do you think is the most beautiful thing about you?</h2>
+ <div class="answers">
+  <button onclick="answer(3,this)">My smile 😊</button>
+  <button onclick="answer(3,this)">My eyes 👀</button>
+  <button onclick="answer(3,this)">Everything about me 💗</button>
+ </div>
+ <p class="feedback" id="feedback3"></p>
+ <button id="next3" class="primary" style="display:none" onclick="go('quiz4')">Next 💗</button>
 </section>
 
-<section class="page" id="year2024">
-  <div class="content glass">
-    <div class="eyebrow">A year of memories</div>
-    <div class="year">2024</div>
-    <h2>Memories I Wish I Could Keep Forever</h2>
-    <p class="quote">“Every memory with you became a little piece of happiness that I wish I could keep forever.”</p>
-    <div class="garden-line">🌹 ✧ 🌼</div>
-    <button class="primary" onclick="go('year2025')">Next Memory →</button>
-  </div>
+<section class="page" id="quiz4">
+ <div class="eyebrow">Question 4 💞</div><div class="big-icon">🌼</div>
+ <p class="progress">Question 4 of 5</p><h2>What's my favourite thing about you?</h2>
+ <div class="answers">
+  <button onclick="answer(4,this)">Your smile 😊</button>
+  <button onclick="answer(4,this)">Your adorable nature 🥰</button>
+  <button onclick="answer(4,this)">Everything that makes you special ❤️</button>
+ </div>
+ <p class="feedback" id="feedback4"></p>
+ <button id="next4" class="primary" style="display:none" onclick="go('quiz5')">Next 💗</button>
 </section>
 
-<section class="page" id="year2025">
-  <div class="content glass">
-    <div class="eyebrow">Through every season</div>
-    <div class="year">2025</div>
-    <h2>Even Through the Difficult Days</h2>
-    <p class="quote">“Even when things aren't perfect, my heart still finds its way back to you.”</p>
-    <div class="garden-line">🪻 ✧ 🌷</div>
-    <button class="primary" onclick="go('year2026')">Next Memory →</button>
-  </div>
+<section class="page" id="quiz5">
+ <div class="eyebrow">One last question 💞</div><div class="big-icon">💖</div>
+ <p class="progress">Question 5 of 5</p><h2>What's my birthday wish for you?</h2>
+ <div class="answers">
+  <button onclick="answer(5,this)">All your dreams coming true ✨</button>
+  <button onclick="answer(5,this)">Happiness every day 💕</button>
+  <button onclick="answer(5,this)">A beautiful future full of love ❤️</button>
+ </div>
+ <p class="feedback" id="feedback5"></p>
+ <button id="next5" class="primary" style="display:none" onclick="go('birthday')">Continue to your birthday surprise 🎂</button>
 </section>
 
-<section class="page" id="year2026">
-  <div class="content glass">
-    <div class="eyebrow">And the story continues</div>
-    <div class="year">2026</div>
-    <h2>If I Could Choose a Thousand Times</h2>
-    <p class="quote">“If I could choose a thousand times, I'd still choose you—not just for today, but for all the tomorrows I dream of.”</p>
-    <div class="garden-line">💗 ✧ 🌹</div>
-    <button class="primary" onclick="go('giftPage')">There's Something for You 🎁</button>
-  </div>
+<section class="page" id="birthday">
+ <div class="garden-line">🌸 🦋 🌷 🦋 🌸</div><div class="big-icon">🎂</div>
+ <h1>Happy Birthday, My Beautiful Girl! ❤️</h1>
+ <p>Today, the world celebrates someone who deserves endless happiness, gentle moments and beautiful dreams.</p>
+ <p>May your smile always find a reason to shine, and may life bring you wonderful things. 🌹</p>
+ <div class="garden-line">🌼 🌿 🌻 🌿 🌼</div>
+ <button class="primary" onclick="go('year23')">Walk Through Our Memories ✨</button>
 </section>
 
-<section class="page" id="giftPage">
-  <div class="content glass">
-    <div class="eyebrow">A little surprise</div>
-    <h1>A Gift for You 🎁</h1>
-    <p>Every gift is special, but this one comes with lots of love.</p>
-    <button class="gift" id="giftButton" onclick="openGift()" aria-label="Open your birthday gift">🎁</button>
-    <p id="giftMessage" aria-live="polite">Tap the gift to see what's inside. ✨</p>
-    <button class="primary" id="giftNext" style="display:none" onclick="go('letterPage')">One Last Letter 💌</button>
-  </div>
+<section class="page" id="year23">
+ <div class="garden-line">🌸 🌱 🦋 🌱 🌸</div><div class="eyebrow">A little memory garden</div>
+ <div class="year">2023</div><h2>The Beginning of Something Beautiful</h2>
+ <p class="memory-quote">“Somewhere between our first moments and our little conversations, you became someone special to my heart.”</p>
+ <div class="garden-line">🌷 🌿 🌷</div><button class="primary" onclick="go('year24')">Next Memory →</button>
 </section>
 
-<section class="page" id="letterPage">
-  <div class="content glass">
-    <div class="eyebrow">From my heart to yours</div>
-    <h2>A Letter for You 💌</h2>
-    <div class="letter" id="originalLetter">Dear Love💗,
+<section class="page" id="year24">
+ <div class="garden-line">🌹 🌹 🦋 🌹 🌹</div><div class="eyebrow">A garden of memories</div>
+ <div class="year">2024</div><h2>Memories I Wish I Could Keep Forever</h2>
+ <p class="memory-quote">“Every memory with you became a little piece of happiness that I wish I could keep forever.”</p>
+ <div class="garden-line">🌺 🌿 🌺</div><button class="primary" onclick="go('year25')">Next Memory →</button>
+</section>
+
+<section class="page" id="year25">
+ <div class="garden-line">🌙 ✨ 🦢 ✨ 🌙</div><div class="eyebrow">Even in the quiet moments</div>
+ <div class="year">2025</div><h2>Even Through the Difficult Days</h2>
+ <p class="memory-quote">“Even when things aren't perfect, my heart still finds its way back to you.”</p>
+ <div class="garden-line">🌌 🌷 🌌</div><button class="primary" onclick="go('year26')">Next Memory →</button>
+</section>
+
+<section class="page" id="year26">
+ <div class="garden-line">✨ 🌸 🦋 🌸 ✨</div><div class="eyebrow">A thousand tomorrows</div>
+ <div class="year">2026</div><h2>If I Could Choose a Thousand Times</h2>
+ <p class="memory-quote">“If I could choose a thousand times, I'd still choose you—not just for today, but for all the tomorrows I dream of.”</p>
+ <div class="garden-line">🌷 🌹 🌷</div><button class="primary" onclick="go('gift')">A Little Gift for You 🎁</button>
+</section>
+
+<section class="page" id="gift">
+ <div class="eyebrow">Something special awaits</div><h1>A Gift From My Heart 💝</h1>
+ <div id="giftIcon" class="big-icon">🎁</div>
+ <p id="giftText">A little box, holding a little surprise. Tap below to open it. 🌷</p>
+ <button id="openGift" class="primary" onclick="openGift()">Open Your Gift ✨</button>
+ <button id="letterButton" style="display:none" onclick="go('letter')">Read My Letter 💌</button>
+ <div class="garden-line">🌹 🦋 🌹</div>
+</section>
+
+<section class="page" id="letter">
+ <div class="eyebrow">From my heart to yours</div><h1>A Letter for You 💌</h1>
+ <div class="letter-paper"><p class="letter-text">Dear Love💗,
 🎂 Happy Birthday to you ❤️ , may God always bless and prosper you and may all your wishes comes true my beautiful girl, I know there are many difficulties and misunderstandings in our relationship, by which you don't like me 🙂 but you don't know how much I love you and I mean it, there are always some mistakes which I do unintentionally but it was never to disrespect you or to hurt you, maybe god is examining our relationship by creating obstacles but it ok and it's fine i want to suffer , i will face every obstacles if it's with you.🫶. I also want you to know that i will never leave you no matter what the conciquences but just remember conciquence should not be thirtd person.  Dear Love 🌻Despite the outcome  i want to be with you forever wether rich or poor 🫶 i want us to be together forever Laarte Jhagarte 😮‍💨. .
 "Someone said he liked rose🌹i said I love her"
-"Someone said world🌏 is dead i said see her with my eyes"👀 
+"Someone said world🌏 is dead i said see her with my eyes"👀
 "Someone asked for future 🪄 I said I've already seen it"
 "Someone said don't love so much it's risky 🚨 i said if dying is the outcome I'll do it too 🚬
 "Shakespeare said I love the faithful gusts that  shakes the casement all day 🍂, i said i  love her so much please take me with her away "😮‍💨
 🫠If being pretty was illegal you would have been sentenced to death my love🤧
-(All Original lines) 👆😅 , 
+(All Original lines) 👆😅 ,
 Finally it's your day so happy birthday 🏵️once again and today if I have ever hurt you intentionally or unintentionally i want to apologise and say sorry for everything with all the love within my heart 💗 and I just want to say 
-👉 next</div>
-    <button class="primary" onclick="startVideo()">👉 Next</button>
-  </div>
+👉 next</p></div>
+ <div class="garden-line">🌹 🦋 🌹</div>
+ <button class="primary" onclick="go('videoPage')">Next ➜</button>
 </section>
 
 <section class="page" id="videoPage">
-  <div class="content glass">
-    <div class="eyebrow">One last thing, my love</div>
-    <h2>Watch This Until the End ❤️</h2>
-    <p>There's something more I want you to see. 🥹</p>
-    <video id="finalVideo" controls playsinline preload="metadata">
-      <source src="final-video.mp4" type="video/mp4">
-      Your browser cannot play this video.
-    </video>
-    <p id="videoStatus" class="small" aria-live="polite">Your video will play with its original sound.</p>
-    <button class="primary" id="finishButton" style="display:none" onclick="go('finalPage')">One Last Message ❤️</button>
-  </div>
+ <div class="eyebrow">One last surprise</div><h1>A Little Something for You ❤️</h1>
+ <p>Take a moment, sit back and enjoy. 🎬</p>
+ <div class="video-box"><video id="finalVideo" controls playsinline preload="metadata"><source src="final-video.mp4" type="video/mp4">Your browser does not support this video.</video></div>
+ <p class="small">The background music stops so you can hear the video's original sound.</p>
+ <button id="finishVideo" class="primary" style="display:none" onclick="go('finalPage')">One Last Page ❤️</button>
 </section>
 
 <section class="page" id="finalPage">
-  <div class="content glass">
-    <div class="eyebrow">Until all our tomorrows</div>
-    <h1>That's All, My Love. ❤️</h1>
-    <p>No matter how many pages, pictures, or words I put together, they'll never be enough to express everything I feel for you.</p>
-    <p style="margin-top:15px">Every little moment, every memory, every smile, and every feeling I have for you means more than these words could ever explain. 🥹💗</p>
-    <p style="margin-top:15px">I wish I could show you how special you are to me, not just today, but every single day.</p>
-    <p style="margin-top:15px">I hope this little surprise makes you smile and reminds you how deeply you are loved.</p>
-    <h2 style="margin-top:25px">Happy Birthday, My Beautiful Girl. 🌹❤️</h2>
-    <div class="garden-line">✧ 🌷 ✧ 🌹 ✧</div>
-    <p>May all your wishes come true. 💗</p>
-    <p style="margin-top:12px">Lots of love from Sahil ❤️</p>
-    <p style="margin-top:20px;font-size:1.4rem">Forever sending you love, Sahil ❤️</p>
-    <footer>Made with love, just for you. 🌙</footer>
-  </div>
+ <div class="garden-line">🌷 🦋 🌹 🦋 🌷</div><div class="big-icon">💗</div>
+ <h1>That's all, my love. ❤️</h1>
+ <p>No matter how many pages, pictures, or words I put together, they'll never be enough to express everything I feel for you.</p>
+ <p>Every little moment, every memory, every smile, and every feeling I have for you means more than these words could ever explain. 🥹💗</p>
+ <p>I wish I could show you how special you are to me, not just today, but every single day.</p>
+ <p>I hope this little surprise makes you smile and reminds you how deeply you are loved.</p>
+ <h2>Happy Birthday, my beautiful girl. 🌹❤️</h2>
+ <p>May all your wishes come true. Lots of love from Sahil ❤️</p>
+ <div class="garden-line">🌸 🌿 🌸</div>
+ <h2>Forever sending you love, Sahil ❤️</h2>
+ <p class="small">May your world always be full of love, peace and beautiful flowers. 🌷</p>
 </section>
 
 </main>
 
 <script>
-const pages = document.querySelectorAll('.page');
-const music = document.getElementById('music');
-const video = document.getElementById('finalVideo');
-let musicStarted = false;
-let quizIndex = 0;
-let answered = false;
+const music = document.getElementById("music");
+const video = document.getElementById("finalVideo");
+let giftOpened = false;
 
-const themes = {
-  welcome:'theme-welcome',
-  quizPage:'theme-quiz',
-  birthdayPage:'theme-birthday',
-  year2023:'theme-2023',
-  year2024:'theme-2024',
-  year2025:'theme-2025',
-  year2026:'theme-2026',
-  giftPage:'theme-gift',
-  letterPage:'theme-letter',
-  videoPage:'theme-video',
-  finalPage:'theme-final'
+const pageThemes = {
+ welcome:"welcome",
+ quiz1:"quiz",quiz2:"quiz",quiz3:"quiz",quiz4:"quiz",quiz5:"quiz",
+ birthday:"birthday",
+ year23:"year23",year24:"year24",year25:"year25",year26:"year26",
+ gift:"gift",letter:"letter",videoPage:"video",finalPage:"final"
 };
 
-function go(id) {
-  pages.forEach(p => p.classList.remove('active'));
-  const target = document.getElementById(id);
-  if (!target) return;
-  target.classList.add('active');
+function go(id){
+ const target=document.getElementById(id);
+ if(!target)return;
 
-  document.body.className = themes[id] || 'theme-welcome';
-  window.scrollTo({top:0,behavior:'smooth'});
+ document.querySelectorAll(".page").forEach(page=>page.classList.remove("active"));
+ target.classList.add("active");
+ document.body.className=pageThemes[id]||"welcome";
+ window.scrollTo({top:0,behavior:"smooth"});
 
-  if (id === 'videoPage') {
-    music.pause();
-  } else if (musicStarted && !videoIsPlaying()) {
-    music.play().catch(()=>{});
-  }
-}
-
-function videoIsPlaying() {
-  return video && !video.paused && !video.ended;
-}
-
-function startExperience() {
-  if (!musicStarted) {
-    musicStarted = true;
-    music.volume = 0.35;
-    music.play().catch(()=>{});
-  }
-  go('quizPage');
-  renderQuestion();
-}
-
-const questions = [
-  {
-    question:"How beautiful do you think you are?",
-    answers:["A. A little beautiful 😊","B. Very beautiful 🥰","C. The most beautiful girl in the world 👑"],
-    feedback:"Whatever you choose… you're beautiful in ways you might not even realise. ❤️"
-  },
-  {
-    question:"Do you know how special you are to me?",
-    answers:["A. Maybe a little 🤭","B. I think I know 🥹","C. More than anyone could ever explain ❤️"],
-    feedback:"Maybe I don't always express it perfectly, but you're precious to me, Samjana. ❤️"
-  },
-  {
-    question:"What do you think is the most beautiful thing about you?",
-    answers:["A. My smile 😊","B. My eyes 👀","C. Everything about me 🌹"],
-    feedback:"Your smile can brighten a day, your eyes have their own magic, but what I love most is simply you. 💗"
-  },
-  {
-    question:"What do you think is my favourite thing about you?",
-    answers:["A. Your beautiful smile 🌸","B. Your adorable nature 🦋","C. Everything that makes you YOU 🥹"],
-    feedback:"It's not just your smile or your adorable nature. It's everything that makes you special, and all the precious memories we share. ❤️"
-  },
-  {
-    question:"If I could make one birthday wish for you, what would it be?",
-    answers:["A. May all your dreams come true ✨","B. May you always be happy and loved 💗","C. All of these, and a beautiful future ahead 🌷"],
-    feedback:"I'd wish for all your dreams to come true, for happiness to find you every day, and for your future to be as beautiful as your heart. Happy Birthday, my love. ❤️🎂"
-  }
-];
-
-function renderQuestion() {
-  answered = false;
-  const q = questions[quizIndex];
-  document.getElementById('quizNumber').textContent = 'Question '+(quizIndex+1)+' of '+questions.length;
-  document.getElementById('question').textContent = q.question;
-  document.getElementById('feedback').textContent = '';
-  document.getElementById('quizNext').style.display = 'none';
-
-  const options = document.getElementById('options');
-  options.replaceChildren();
-
-  q.answers.forEach(answer => {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'answer';
-    btn.textContent = answer;
-
-    btn.addEventListener('click',()=>{
-      if(answered) return;
-      answered = true;
-      options.querySelectorAll('button').forEach(b=>b.disabled=true);
-      btn.classList.add('selected');
-      document.getElementById('feedback').textContent = q.feedback;
-      document.getElementById('quizNext').style.display = 'inline-block';
-      document.getElementById('quizNext').textContent =
-        quizIndex === questions.length-1 ? 'Birthday Wishes 🎂' : 'Next Question 💗';
-    });
-    options.appendChild(btn);
-  });
-}
-
-function nextQuestion() {
-  if(!answered) return;
-  if(quizIndex < questions.length-1) {
-    quizIndex++;
-    renderQuestion();
-  } else {
-    go('birthdayPage');
-  }
-}
-
-function openGift() {
-  const gift = document.getElementById('giftButton');
-  if(gift.classList.contains('open')) return;
-  gift.classList.add('open');
-
-  setTimeout(()=>{
-    gift.textContent = '💝';
-    document.getElementById('giftMessage').textContent =
-      'A little reminder that someone is wishing you all the happiness in the world. 💗✨';
-    document.getElementById('giftNext').style.display = 'inline-block';
-  },650);
-}
-
-function startVideo() {
+ if(id==="videoPage"){
   music.pause();
-  music.currentTime = 0;
+  video.currentTime=0;
+  document.getElementById("finishVideo").style.display="none";
+  video.play().catch(()=>{});
+ }else{
   video.pause();
-  video.currentTime = 0;
-  document.getElementById('finishButton').style.display = 'none';
-  document.getElementById('videoStatus').textContent =
-    'Your video will play with its original sound.';
-  go('videoPage');
+ }
 
-  video.play().then(()=>{
-    document.getElementById('videoStatus').textContent = 'Enjoy your little surprise. ❤️';
-    document.getElementById('finishButton').style.display = 'inline-block';
-  }).catch(()=>{
-    document.getElementById('videoStatus').textContent =
-      'Tap the play button on the video to begin.';
-  });
+ if(id==="finalPage"){
+  music.pause();
+  video.pause();
+ }
 }
 
-video.addEventListener('ended',()=>{
-  document.getElementById('finishButton').style.display = 'inline-block';
-  document.getElementById('videoStatus').textContent = 'I hope this made you smile. ❤️';
+/* Start the website and music after the visitor taps */
+function startJourney(){
+ music.volume=.5;
+ music.play().catch(()=>{});
+ go("quiz1");
+}
+
+/* Exact loving responses supplied by Sahil */
+const feedbackTexts = {
+  1: "Whatever you choose, you are beautiful in ways you might not even realise. ❤️",
+
+  2: "Maybe I don't express it perfectly but you are precious to me samjana ❤️",
+
+  3: "Your smile can brighten a day, your eyes have their own magic, but what I love most is simply you. 💗",
+
+  4: "It's not just your smile or your adorable nature. It's everything that makes you special, and all the precious memories we share. ❤️",
+
+  5: "I'd wish for all your dreams to come true, for happiness to find you every day, and for your future to be as beautiful as your heart. Happy Birthday, my love. ❤️🎂"
+};
+
+function answer(number,button){
+ const feedback=document.getElementById("feedback"+number);
+ const next=document.getElementById("next"+number);
+
+ if(!feedback||!next||button.disabled)return;
+
+ feedback.textContent=feedbackTexts[number];
+ next.style.display="inline-block";
+
+ document.querySelectorAll("#quiz"+number+" .answers button").forEach(btn=>{
+  btn.disabled=true;
+  btn.style.opacity=".78";
+ });
+}
+
+/* Gift animation */
+function openGift(){
+ if(giftOpened)return;
+ giftOpened=true;
+
+ const icon=document.getElementById("giftIcon");
+ icon.textContent="💖";
+ icon.style.transform="scale(1.3) rotate(8deg)";
+
+ document.getElementById("giftText").innerHTML=
+ "Surprise! 🎉<br><br>The most beautiful part of this gift isn't inside a box. It's the love, memories and wishes I wanted to share with you. 🌹✨";
+
+ document.getElementById("openGift").style.display="none";
+ document.getElementById("letterButton").style.display="inline-block";
+
+ makeBurst();
+
+ setTimeout(()=>{icon.style.transform="";},500);
+}
+
+/* Extra floating gift sparkles */
+function makeBurst(){
+ const decor=document.getElementById("decor");
+ const burstItems=["💗","✨","🌸","💖","🌷"];
+
+ for(let i=0;i<24;i++){
+  const item=document.createElement("span");
+  item.className="floaty";
+  item.textContent=burstItems[i%burstItems.length];
+  item.style.setProperty("--x",Math.random()*100+"%");
+  item.style.setProperty("--size",(16+Math.random()*20)+"px");
+  item.style.setProperty("--speed",(4+Math.random()*4)+"s");
+  item.style.setProperty("--delay","0s");
+  item.style.setProperty("--drift",(-70+Math.random()*140)+"px");
+  decor.appendChild(item);
+  setTimeout(()=>item.remove(),8500);
+ }
+}
+
+/* Stop music when the video starts.
+   Reveal the next button only when playback reaches the end. */
+video.addEventListener("play",()=>{
+ music.pause();
+ document.getElementById("finishVideo").style.display="none";
 });
-video.addEventListener('play',()=>music.pause());
-video.addEventListener('error',()=>{
-  document.getElementById('videoStatus').textContent =
-    'Video could not load. Check that final-video.mp4 is uploaded correctly.';
+
+video.addEventListener("ended",()=>{
+ document.getElementById("finishVideo").style.display="inline-block";
 });
 
-// Stars
-const sky = document.getElementById('sky');
-for(let i=0;i<100;i++){
-  const s=document.createElement('span');
-  s.className='star';
-  s.style.left=Math.random()*100+'%';
-  s.style.top=Math.random()*100+'%';
-  s.style.animationDelay=Math.random()*4+'s';
-  s.style.animationDuration=(1.5+Math.random()*3)+'s';
-  sky.appendChild(s);
+/* Floating flowers and petals */
+const decor=document.getElementById("decor");
+const floatItems=["🌸","🌷","🌼","🌺","🌹","🍃","✨","🌻"];
+
+for(let i=0;i<22;i++){
+ const item=document.createElement("span");
+ item.className="floaty";
+ item.textContent=floatItems[i%floatItems.length];
+ item.style.setProperty("--x",Math.random()*100+"%");
+ item.style.setProperty("--size",(16+Math.random()*19)+"px");
+ item.style.setProperty("--speed",(12+Math.random()*17)+"s");
+ item.style.setProperty("--delay",(-Math.random()*25)+"s");
+ item.style.setProperty("--drift",(-70+Math.random()*140)+"px");
+ decor.appendChild(item);
 }
 
-// Petals
-const decor=document.getElementById('decor');
-const flowers=['🌸','🌹','🌷','✿','❀','🌼'];
-for(let i=0;i<25;i++){
-  const p=document.createElement('span');
-  p.className='petal';
-  p.textContent=flowers[i%flowers.length];
-  p.style.left=Math.random()*100+'%';
-  p.style.animationDuration=(10+Math.random()*14)+'s';
-  p.style.animationDelay=(-Math.random()*20)+'s';
-  p.style.fontSize=(12+Math.random()*14)+'px';
-  decor.appendChild(p);
-}
-
-// Fireflies
+/* Fireflies */
 for(let i=0;i<18;i++){
-  const f=document.createElement('span');
-  f.className='firefly';
-  f.style.left=Math.random()*100+'%';
-  f.style.top=Math.random()*100+'%';
-  f.style.animationDelay=(-Math.random()*7)+'s';
-  decor.appendChild(f);
+ const firefly=document.createElement("span");
+ firefly.className="firefly";
+ firefly.style.setProperty("--x",Math.random()*100+"%");
+ firefly.style.setProperty("--y",Math.random()*100+"%");
+ firefly.style.setProperty("--delay",(-Math.random()*3)+"s");
+ decor.appendChild(firefly);
 }
 
-// Butterflies and dove decorations
-const creatures=['🦋','🦋','🦋','🕊️','🕊️'];
-creatures.forEach((creature,i)=>{
-  const el=document.createElement('span');
-  el.className='butterfly';
-  el.textContent=creature;
-  el.style.left=(5+Math.random()*85)+'%';
-  el.style.top=(15+Math.random()*65)+'%';
-  el.style.animationDelay=(-Math.random()*12)+'s';
-  el.style.animationDuration=(8+Math.random()*9)+'s';
-  decor.appendChild(el);
-});
+/* Butterflies */
+for(let i=0;i<4;i++){
+ const butterfly=document.createElement("span");
+ butterfly.className="butterfly";
+ butterfly.textContent="🦋";
+ butterfly.style.setProperty("--y",(10+Math.random()*70)+"%");
+ butterfly.style.setProperty("--speed",(18+Math.random()*18)+"s");
+ butterfly.style.setProperty("--delay",(-Math.random()*30)+"s");
+ decor.appendChild(butterfly);
+}
+
+/* Birds */
+for(let i=0;i<3;i++){
+ const bird=document.createElement("span");
+ bird.className="bird";
+ bird.textContent="🕊️";
+ bird.style.setProperty("--y",(8+Math.random()*30)+"%");
+ bird.style.setProperty("--speed",(22+Math.random()*18)+"s");
+ bird.style.setProperty("--delay",(-Math.random()*25)+"s");
+ decor.appendChild(bird);
+}
 </script>
+
 </body>
 </html>
